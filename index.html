@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HanCraft: Chinese Learning Game</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div class="app-layout">
         <!-- Header / Nav -->
@@ -21,19 +25,25 @@
 
         <!-- Main Game Area -->
         <main class="game-container">
-            
+
             <!-- Controls & Scrubber -->
             <div class="control-bar">
                 <div class="playback-controls">
                     <button id="btn-rewind" class="icon-btn" title="Rewind 5s">
-                        <svg viewBox="0 0 24 24"><path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z"/></svg>
+                        <svg viewBox="0 0 24 24">
+                            <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z" />
+                        </svg>
                     </button>
                     <button id="btn-play-pause" class="icon-btn primary" title="Play">
-                        <svg id="icon-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        <svg id="icon-pause" class="hidden" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                        <svg id="icon-play" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z" />
+                        </svg>
+                        <svg id="icon-pause" class="hidden" viewBox="0 0 24 24">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+                        </svg>
                     </button>
                 </div>
-                
+
                 <div class="scrubber-container">
                     <span id="time-current">00:00</span>
                     <input type="range" id="timeline-scrubber" min="0" max="100" value="0" step="0.1">
@@ -70,7 +80,7 @@
         <!-- Side Panel -->
         <aside class="side-panel">
             <h3>Learning Tools</h3>
-            
+
             <div class="setting-group">
                 <label class="toggle-switch">
                     <input type="checkbox" id="toggle-highlight" checked>
@@ -116,4 +126,5 @@
     <!-- JS Handling -->
     <script type="module" src="src/main.js"></script>
 </body>
+
 </html>
