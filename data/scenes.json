@@ -1,0 +1,151 @@
+[
+  {
+    "id": "greeting_01",
+    "title": "Scene 1: The Greeting",
+    "duration": 10,
+    "bgColor": "#2d3436",
+    "actors": [
+      { "id": "a1", "name": "Xiao Ming", "color": "#0984e3", "x": 30, "y": 60 },
+      { "id": "a2", "name": "Teacher Li", "color": "#d63031", "x": 70, "y": 60 }
+    ],
+    "animations": [
+        { "time": 0.5, "actorId": "a1", "type": "move", "toX": 40, "duration": 1 },
+        { "time": 2.0, "actorId": "a2", "type": "jump", "duration": 0.5 }
+    ],
+    "subtitles": [
+      {
+        "t": 1.0,
+        "text": "你好！",
+        "tokens": [
+          {"hanzi":"你","pinyin":"nǐ","meaning":"you"},
+          {"hanzi":"好","pinyin":"hǎo","meaning":"good"}
+        ],
+        "meaning": "Hello!"
+      },
+      {
+        "t": 3.0,
+        "text": "李老师，你好！",
+        "tokens": [
+          {"hanzi":"李","pinyin":"Lǐ","meaning":"(Surname Li)"},
+          {"hanzi":"老师","pinyin":"lǎoshī","meaning":"teacher"},
+          {"hanzi":"，","pinyin":"","meaning":""},
+          {"hanzi":"你好","pinyin":"nǐhǎo","meaning":"hello"}
+        ],
+        "meaning": "Hello, Teacher Li!"
+      },
+      {
+        "t": 6.0,
+        "text": "早安，小明。",
+        "tokens": [
+          {"hanzi":"早安","pinyin":"zǎo'ān","meaning":"good morning"},
+          {"hanzi":"，","pinyin":"","meaning":""},
+          {"hanzi":"小明","pinyin":"Xiǎomíng","meaning":"Xiao Ming"}
+        ],
+        "meaning": "Good morning, Xiao Ming."
+      }
+    ]
+  },
+  {
+    "id": "food_01",
+    "title": "Scene 2: Ordering Food",
+    "duration": 15,
+    "bgColor": "#e17055",
+    "actors": [
+      { "id": "customer", "name": "Customer", "color": "#6c5ce7", "x": 20, "y": 50 },
+      { "id": "waiter", "name": "Waiter", "color": "#fab1a0", "x": 80, "y": 50 }
+    ],
+    "animations": [
+        { "time": 1, "actorId": "waiter", "type": "move", "toX": 60, "duration": 2 }
+    ],
+    "subtitles": [
+      {
+        "t": 1.0,
+        "text": "请问，有菜单吗？",
+        "tokens": [
+          {"hanzi":"请问","pinyin":"qǐngwèn","meaning":"excuse me"},
+          {"hanzi":"，","pinyin":"","meaning":""},
+          {"hanzi":"有","pinyin":"yǒu","meaning":"have"},
+          {"hanzi":"菜单","pinyin":"càidān","meaning":"menu"},
+          {"hanzi":"吗","pinyin":"ma","meaning":"(question particle)"},
+          {"hanzi":"？","pinyin":"","meaning":""}
+        ],
+        "meaning": "Excuse me, do you have a menu?"
+      },
+      {
+        "t": 5.0,
+        "text": "有的，请稍等。",
+        "tokens": [
+          {"hanzi":"有的","pinyin":"yǒude","meaning":"yes/we do"},
+          {"hanzi":"，","pinyin":"","meaning":""},
+          {"hanzi":"请","pinyin":"qǐng","meaning":"please"},
+          {"hanzi":"稍等","pinyin":"shāoděng","meaning":"wait a moment"},
+          {"hanzi":"。","pinyin":"","meaning":""}
+        ],
+        "meaning": "Yes, please wait a moment."
+      },
+       {
+        "t": 9.0,
+        "text": "我要一碗牛肉面。",
+        "tokens": [
+          {"hanzi":"我","pinyin":"wǒ","meaning":"I"},
+          {"hanzi":"要","pinyin":"yào","meaning":"want"},
+          {"hanzi":"一","pinyin":"yī","meaning":"one"},
+          {"hanzi":"碗","pinyin":"wǎn","meaning":"bowl"},
+          {"hanzi":"牛肉面","pinyin":"niúròumiàn","meaning":"beef noodles"},
+          {"hanzi":"。","pinyin":"","meaning":""}
+        ],
+        "meaning": "I want a bowl of beef noodles."
+      }
+    ]
+  },
+  {
+    "id": "directions_01",
+    "title": "Scene 3: Asking Directions",
+    "duration": 12,
+    "bgColor": "#00b894",
+    "actors": [
+      { "id": "tourist", "name": "Tourist", "color": "#ffeaa7", "x": 10, "y": 50 },
+      { "id": "local", "name": "Local", "color": "#0984e3", "x": 90, "y": 50 }
+    ],
+    "animations": [
+        { "time": 0, "actorId": "tourist", "type": "move", "toX": 40, "duration": 4 }
+    ],
+    "subtitles": [
+      {
+        "t": 1.5,
+        "text": "不好意思，地铁站在哪儿？",
+        "tokens": [
+          {"hanzi":"不好意思","pinyin":"bùhǎoyìsi","meaning":"sorry/excuse me"},
+          {"hanzi":"，","pinyin":"","meaning":""},
+          {"hanzi":"地铁站","pinyin":"dìtiězhàn","meaning":"subway station"},
+          {"hanzi":"在","pinyin":"zài","meaning":"at"},
+          {"hanzi":"哪儿","pinyin":"nǎr","meaning":"where"},
+          {"hanzi":"？","pinyin":"","meaning":""}
+        ],
+        "meaning": "Excuse me, where is the subway station?"
+      },
+      {
+        "t": 6.0,
+        "text": "一直走，然后右转。",
+        "tokens": [
+          {"hanzi":"一直","pinyin":"yīzhí","meaning":"straight"},
+          {"hanzi":"走","pinyin":"zǒu","meaning":"walk/go"},
+          {"hanzi":"，","pinyin":"","meaning":""},
+          {"hanzi":"然后","pinyin":"ránhòu","meaning":"then"},
+          {"hanzi":"右转","pinyin":"yòuzhuǎn","meaning":"turn right"},
+          {"hanzi":"。","pinyin":"","meaning":""}
+        ],
+        "meaning": "Go straight, then turn right."
+      },
+      {
+        "t": 9.5,
+        "text": "谢谢！",
+        "tokens": [
+          {"hanzi":"谢谢","pinyin":"xièxie","meaning":"thanks"},
+          {"hanzi":"！","pinyin":"","meaning":""}
+        ],
+        "meaning": "Thanks!"
+      }
+    ]
+  }
+]
